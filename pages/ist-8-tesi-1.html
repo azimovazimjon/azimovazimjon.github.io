@@ -7,9 +7,10 @@ UTU_9845_187_33_37_9_14_1_2021
  -->
 <html>
 <head>
+    <meta charset="UTF-8">
 <meta content="text/html; charset=windows-1251" http-equiv="content-type">
-<Script Language="JavaScript">  
-<!-- Начало сценария 
+<Script Language="JavaScript">
+<!-- РќР°С‡Р°Р»Рѕ СЃС†РµРЅР°СЂРёСЏ
 var rez=[4,8];
 var vinq=[4,4];
 var kfQ=[1,1];
@@ -19,7 +20,7 @@ var svob=[ [] ];
 // PerVop
 var mix=true;
 var svob1=1063;
-</script>  
+</script>
 <!--####################################################################################################################################-->
 <style>
 body {
@@ -32,11 +33,11 @@ body {
 .onetest {
     position: relative;
     box-shadow: 0 0 6px #00C036;
-    border-radius: 6px 6px 6px 6px;  
+    border-radius: 6px 6px 6px 6px;
     padding: 15px 20px;
     margin-bottom: 15px;
 	background-color: #FFFFFF;
-	
+
 }
 .onetest img {
 max-width:600px;
@@ -46,7 +47,7 @@ color: #008000;
 text-decoration:none;
 }
 .testname {
-    font: 22px 'Arial';  
+    font: 22px 'Arial';
 }
 .testdescription {
     font: 12px/16px 'Arial';
@@ -143,7 +144,7 @@ function getchecked(a,b){
 	var tt = document.getElementsByName("Q"+a);
 	if(tt[b].checked) tt[b].checked = false;
 	else tt[b].checked = true;}
-function code(strIn){	
+function code(strIn){
 	var strOut=[],ii,jj;
 	for(ii=0; ii<strIn.length; ii++) {
 		var strTmp=[];
@@ -165,7 +166,7 @@ function check_me(){
 		for(i=0;i<svob.length;i++){
 			names=document.getElementsByName("S"+(i+1));
 			if(names[0].value=='')vah=true;}}
-	if(vah) alert("Вы выполнили не все задания. Проверьте себя.");
+	if(vah) alert("Р’С‹ РІС‹РїРѕР»РЅРёР»Рё РЅРµ РІСЃРµ Р·Р°РґР°РЅРёСЏ. РџСЂРѕРІРµСЂСЊС‚Рµ СЃРµР±СЏ.");
 	else{
 		if(document.getElementById("torf1") != null){
 			for(i=0;i<rez.length;i++){
@@ -201,8 +202,8 @@ function check_me(){
 				totalS[i]=0;
 				names=document.getElementsByName("S"+(i+1));
 				var names1 = names[0].value;
-				names1 = names1.replace("ё", "е");
-				names1 = names1.replace("Ё", "Е");
+				names1 = names1.replace("С‘", "Рµ");
+				names1 = names1.replace("РЃ", "Р•");
 				truerez = code(svob[i]);
 				for(j=0;j<truerez.length;j++){if(names1==truerez[j]){totalS[i]=1;}}
 				totalSAll += kfS[i];
@@ -217,9 +218,9 @@ function showResult(totalQS, answerTrue, total){
 	for(i=0;i<kfQ.length;i++) maxQS += kfQ[i];
 	for(i=0;i<kfS.length;i++) maxQS += kfS[i];
 	vv = total*100/maxQS;
-	document.getElementById("winotv").innerHTML='<span style="font-size: 22px;">Вы набрали</span><br/><b>'+answerTrue.toFixed(1)+'</b> баллов из <b>'+totalQS.toFixed(1)+'</b> возможных<br>Тест пройден на <b>'+vv.toFixed(0)+'%</b>';
-	document.getElementById("rezbutton").style.display="none"; 
-	document.getElementById("winotv").style.display="block"; 
+	document.getElementById("winotv").innerHTML='<span style="font-size: 22px;">Р’С‹ РЅР°Р±СЂР°Р»Рё</span><br/><b>'+answerTrue.toFixed(1)+'</b> Р±Р°Р»Р»РѕРІ РёР· <b>'+totalQS.toFixed(1)+'</b> РІРѕР·РјРѕР¶РЅС‹С…<br>РўРµСЃС‚ РїСЂРѕР№РґРµРЅ РЅР° <b>'+vv.toFixed(0)+'%</b>';
+	document.getElementById("rezbutton").style.display="none";
+	document.getElementById("winotv").style.display="block";
 	aspan = document.getElementsByName("aspan");
 	for(i=0;i<aspan.length;i++)	{
 		aspan[i].onclick = '';
@@ -229,13 +230,13 @@ function showResult(totalQS, answerTrue, total){
 			names=document.getElementsByName("S"+(i+1));
 			names[0].disabled = true;}}
 	if(document.getElementById("torf1") != null){
-		for (ii=1;ii<=rez.length;ii++){ 
+		for (ii=1;ii<=rez.length;ii++){
 			ss = document.getElementsByName("Q"+ii.toString());
 			for (jj=0;jj < ss.length;jj++){ss[jj].disabled = "disabled";}}}
-	if(vv==100) document.getElementById("winotv").style.backgroundColor="#E1FFE1";   
-	else { 
+	if(vv==100) document.getElementById("winotv").style.backgroundColor="#E1FFE1";
+	else {
 		document.getElementById("winotv").style.color="#FF0000";
-		document.getElementById("winotv").style.boxShadow="0 0 6px #FF0000"; 
+		document.getElementById("winotv").style.boxShadow="0 0 6px #FF0000";
 		document.getElementById("winotv").style.backgroundColor="#FFE1E1";}}
 Array.prototype.shuffle = function( deep ){
   var i = this.length, j, t;
@@ -245,7 +246,7 @@ Array.prototype.shuffle = function( deep ){
    this[i] = this[j];
    this[j] = t;}
   return this;};
-<!--Окончание сценария -->
+<!--РћРєРѕРЅС‡Р°РЅРёРµ СЃС†РµРЅР°СЂРёСЏ -->
 </script>
 <!--####################################################################################################################################-->
 <!--####################################################################################################################################-->
@@ -254,28 +255,28 @@ Array.prototype.shuffle = function( deep ){
 <body>
 <div class="onetest">
 <div class="testname">
-<span class="aspan" style="font-size:7pt;float:right;"><a href="http://testedu.ru/" target="_blank">TestEdu v1.21 - 2018 год</a></span>
+<span class="aspan" style="font-size:7pt;float:right;"><a href="http://testedu.ru/" target="_blank">TestEdu v1.21 - 2018 РіРѕРґ</a></span>
 <!-- name -->
-Теси 1
+РўРµСЃРё 1
 </div>
 <div class="testdescription">
 <!-- opisan -->
-Ба саволхо чавоб гуед.
+Р‘Р° СЃР°РІРѕР»С…Рѕ С‡Р°РІРѕР± РіСѓРµРґ.
 <!-- opisan end -->
 </div>
 <div class="testline"></div>
 <div class="testclass">
 <!-- predmet -->
-История
- 
+РСЃС‚РѕСЂРёСЏ
+
 <!-- klass -->
-8 класс
+8 РєР»Р°СЃСЃ
 &nbsp; | &nbsp;
-Дата: 14.01.2021
+Р”Р°С‚Р°: 14.01.2021
 &nbsp; | &nbsp;
-Вопросов: 2
+Р’РѕРїСЂРѕСЃРѕРІ: 2
 &nbsp; | &nbsp;
-Автор: 
+РђРІС‚РѕСЂ:
 <!-- avtor -->
 Azimov Azim
 
@@ -296,10 +297,10 @@ kol vop end-->
 <form name="test" method="post">
 <!-- vopr i otveti -->
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„–
 1
 <!-- vopros
-рипри олол лол
+СЂРёРїСЂРё РѕР»РѕР» Р»РѕР»
 vopros end -->
 
 <!-- otvet
@@ -307,10 +308,10 @@ vopros end -->
 4
 1
 4
-олрло ло
-олтолл
-длд
-мсап
+РѕР»СЂР»Рѕ Р»Рѕ
+РѕР»С‚РѕР»Р»
+РґР»Рґ
+РјСЃР°Рї
 
 
 
@@ -321,10 +322,10 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„–
 2
 <!-- vopros
-орподнпдпгн
+РѕСЂРїРѕРґРЅРїРґРїРіРЅ
 vopros end -->
 
 <!-- otvet
@@ -332,10 +333,10 @@ vopros end -->
 4
 0
 7
-рпрпр
-гнгнг 
-гнгнг
-гшгш
+СЂРїСЂРїСЂ
+РіРЅРіРЅРі
+РіРЅРіРЅРі
+РіС€РіС€
 
 
 
@@ -345,27 +346,27 @@ otvet end -->
 </div>
 <div id="winotv"></div>
 <div id="rezbutton">
-<input type="button" name="simb" onclick="check_me()" value="Проверить результат">
+<input type="button" name="simb" onclick="check_me()" value="РџСЂРѕРІРµСЂРёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚">
 </div>
 </form>
 <Script Language="JavaScript">
 var vopr_otv = [
 '<font color="#333333" saze="3"><p>\r\n'+
-'рипри олол лол'+
+'СЂРёРїСЂРё РѕР»РѕР» Р»РѕР»'+
 '</p></font><div class="otv" id="torf1"></div>'+
 '\<!-- otvet--\>\r\n'+
-'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,0)"> олрло ло</span><br>'
-+'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,1)"> олтолл</span><br>'
-+'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,2)"> длд</span><br>'
-+'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,3)"> мсап</span><br>'
+'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,0)"> РѕР»СЂР»Рѕ Р»Рѕ</span><br>'
++'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,1)"> РѕР»С‚РѕР»Р»</span><br>'
++'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,2)"> РґР»Рґ</span><br>'
++'<input type=checkbox name=Q1 class="niceCheck"><span name="aspan" class="aspan" onclick="getchecked(1,3)"> РјСЃР°Рї</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
-'орподнпдпгн'+
+'РѕСЂРїРѕРґРЅРїРґРїРіРЅ'+
 '</p></font><div class="otv" id="torf2"></div>'+
-'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,0)"> рпрпр</span><br>'
-+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,1)"> гнгнг </span><br>'
-+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,2)"> гнгнг</span><br>'
-+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,3)"> гшгш</span><br>'
+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,0)"> СЂРїСЂРїСЂ</span><br>'
++'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,1)"> РіРЅРіРЅРі </span><br>'
++'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,2)"> РіРЅРіРЅРі</span><br>'
++'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,3)"> РіС€РіС€</span><br>'
 ];
 kodvopr = document.getElementsByName("onetest");
 if(mix)vopr_otv.shuffle();
