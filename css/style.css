@@ -1,6 +1,9 @@
 .body{
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
 }
 
 *,*:after,*:before{
@@ -16,7 +19,7 @@
 ===============*/
 
 .header{
-
+    padding:10px;
 }
 
 .header__item{
@@ -26,11 +29,13 @@
 }
 
 .header__link{
-    margin-left: 20px;
+    text-transform: uppercase;
+    margin-left: 14px;
     text-decoration: none;
     color: #000;
+    font-size: 16px;
     font-weight: 700;
-    transition: color .25s linear;
+    transition: color .15s linear;
 }
 
 .header__link:hover{
@@ -38,13 +43,19 @@
 }
 /*Intro*/
 .intro{
-    width: 100%;
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
+    height: 500px;
+    background: #75799f url("../images/Фон.jpg") no-repeat center;
+    background-size: cover;
 }
 .intro__title{
-    text-align: center;
     text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
 }
 
 /*content*/
@@ -56,35 +67,76 @@
     align-items: center;
     margin: 30px 0;
 }
-
+.content__title{
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 .content__text{
     margin-top: 25px;
     text-indent: 15px;
+    padding: 0 20px;
 }
 
 .footer{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    background-color: #336886;
+    padding: 25px 0;
+}
+.footer__address,.author{
+    width: 50%;
+}
+.lesson__table{
+    background-color: #d4a4a4;
+    padding: 20px 0;
 }
 .table{
     margin: 20px auto;
     border-collapse: collapse;
+    border-radius: 5px;
 }
 .table td{
-    padding: 2px;
+    padding: 2px 3px;
     vertical-align: center;
     text-align: center;
     border: 2px solid #454141;
+    text-transform: uppercase;
 }
 
+.table td:hover{
+    background-color: #e78d8d;
+}
 
+.title__table{
+    text-align: center;
+    text-transform: uppercase;
+}
 /*Books*/
 
 .books{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #c9ef7e;
 }
 
+.books__title{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ee1f1f;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.books__link{
+    margin-left: 20px;
+}
+.books__item{
+    width: 33.333%;
+    margin-bottom:20px;
+}
 .books__item a{
     text-decoration: none;
     color: black;
@@ -95,3 +147,54 @@
 .books__item a:hover{
     color: #f50000;
 }
+
+.burger{
+    display: none;
+}
+
+.test{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #c79f9f;
+}
+
+
+
+
+
+
+
+/*Media*/
+
+@media (max-width: 770px) {
+    .header__link{
+        font-size: 12px;
+    }
+    .intro{
+        height: auto;
+        padding: 35px 0;
+    }
+    .intro__title{
+        font-size: 20px;
+    }
+    .nav{
+        display: none;
+     }
+    .burger{
+        display: block;
+        background-color: #9c5b5b;
+    }
+    .books__item {
+        width: 50%;
+    }
+    }
+
+
+
+
+
+
+
+
