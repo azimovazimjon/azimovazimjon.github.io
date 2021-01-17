@@ -1,6 +1,7 @@
 .body{
     margin: 0;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -22,12 +23,25 @@ h1,h2,h3,h4,h5,h6{
     padding:10px;
 }
 
+.header.fixed{
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 20px ;
+    margin-top: 0;
+}
+
+
 .header__item{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.nav{
+    display: flex;
+}
 .header__link{
     text-transform: uppercase;
     margin-left: 14px;
@@ -89,13 +103,14 @@ h1,h2,h3,h4,h5,h6{
     width: 50%;
 }
 .lesson__table{
+    width: 100%;
     background-color: #d4a4a4;
     padding: 20px 0;
 }
 .table{
     margin: 20px auto;
     border-collapse: collapse;
-    border-radius: 5px;
+    width:100%;
 }
 .table td{
     padding: 2px 3px;
@@ -148,10 +163,46 @@ h1,h2,h3,h4,h5,h6{
     color: #f50000;
 }
 
-.burger{
-    display: none;
+
+.test__item{
+    margin-bottom: 20px;
 }
 
+.burger{
+    display: none;
+    cursor: pointer;
+    background: #FFFFFF;
+    border:0;
+    padding: 8px 2px;
+}
+
+.burger__item{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger__item:before,.burger__item:after{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item:before{
+    top: -6px;
+}
+
+.burger__item:after{
+    bottom: -6px;
+}
 .test{
     padding: 20px;
     display: flex;
@@ -181,10 +232,22 @@ h1,h2,h3,h4,h5,h6{
     }
     .nav{
         display: none;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 8%;
+        flex-direction: column;
+        text-align: right;
      }
+    .nav.show{
+        display: flex;
+    }
+    .header__link{
+        padding: 7px 15px;
+    }
     .burger{
         display: block;
-        background-color: #9c5b5b;
     }
     .books__item {
         width: 50%;
