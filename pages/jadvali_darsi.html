@@ -5,27 +5,33 @@
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ҷадвали дарсӣ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header__item">
             <div class="header__logo">
                 <img src="../images/logo1.png" alt="" class="logo">
             </div>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a href="../index.html" class="header__link">Асосӣ</a>
                 <a href="jadvali_darsi.html" class="header__link">Ҷадвали дарсӣ</a>
                 <a href="books.html" class="header__link">Китобхона</a>
                 <a href="Test.html" class="header__link">Тестҳо</a>
             </nav>
+            <button type="button" class="burger" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
         </div>
     </div>
 </header>
 
-<div class="container">
     <div class="lesson__table">
+        <div class="container">
         <h2 class="title__table">Ҷадвали дарсии синфи 11</h2>
         <table class="table">
             <tr>
@@ -101,5 +107,6 @@
         <div class="author">Created by: ABDULAZIM</div>
     </footer>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
