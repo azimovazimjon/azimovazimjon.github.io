@@ -1,16 +1,18 @@
-.body{
+.body {
     margin: 0;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-*,*:after,*:before{
+*, *:after, *:before {
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -19,30 +21,32 @@ h1,h2,h3,h4,h5,h6{
 /*header====
 ===============*/
 
-.header{
-    padding:10px;
+.header {
+    padding: 10px;
 }
 
-.header.fixed{
+.header.fixed {
     position: fixed;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding:0 20px ;
+    padding: 0 20px;
     margin-top: 0;
 }
 
 
-.header__item{
+.header__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav{
+
+.nav {
     display: flex;
 }
-.header__link{
+
+.header__link {
     text-transform: uppercase;
     margin-left: 14px;
     text-decoration: none;
@@ -52,11 +56,12 @@ h1,h2,h3,h4,h5,h6{
     transition: color .15s linear;
 }
 
-.header__link:hover{
+.header__link:hover {
     color: #cb4646;
 }
+
 /*Intro*/
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +70,8 @@ h1,h2,h3,h4,h5,h6{
     background: #75799f url("../images/Фон.jpg") no-repeat center;
     background-size: cover;
 }
-.intro__title{
+
+.intro__title {
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
@@ -74,70 +80,74 @@ h1,h2,h3,h4,h5,h6{
 
 /*content*/
 
-.content__item{
+.content__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
-.content__title{
+
+.content__title {
     margin-top: 20px;
     font-size: 18px;
     text-transform: uppercase;
 }
-.content__text{
+
+.content__text {
     margin-top: 25px;
     text-indent: 15px;
     padding: 0 20px;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
     background-color: #336886;
     padding: 25px 0;
 }
-.footer__address,.author{
+
+.footer__address, .author {
     width: 50%;
 }
-.lesson__table{
-    width: 100%;
-    background-color: #d4a4a4;
-    padding: 20px 0;
-}
-.table{
-    margin: 20px auto;
-    border-collapse: collapse;
-    width:100%;
-}
-.table td{
-    padding: 2px 3px;
-    vertical-align: center;
-    text-align: center;
-    border: 2px solid #454141;
-    text-transform: uppercase;
+
+.lesson__table {
+    width: 70%;
+    max-width: 1000px;
 }
 
-.table td:hover{
+.table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 2px 3px;
+    text-align: center;
+    border: 1px solid #454141;
+}
+
+.table td:hover {
     background-color: #e78d8d;
 }
 
-.title__table{
+.title__table {
     text-align: center;
     text-transform: uppercase;
 }
+
 /*Books*/
 
-.books{
+.books {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 20px;
     background-color: #c9ef7e;
 }
 
-.books__title{
+.books__title {
     text-transform: uppercase;
     font-size: 15px;
     color: #ee1f1f;
@@ -145,38 +155,41 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 10px;
     padding: 0 10px;
 }
-.books__link{
+
+.books__link {
     margin-left: 20px;
 }
-.books__item{
+
+.books__item {
     width: 33.333%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-.books__item a{
+
+.books__item a {
     text-decoration: none;
     color: black;
     font-weight: 700;
     transition: color .2s linear;
 }
 
-.books__item a:hover{
+.books__item a:hover {
     color: #f50000;
 }
 
 
-.test__item{
+.test__item {
     margin-bottom: 20px;
 }
 
-.burger{
+.burger {
     display: none;
     cursor: pointer;
     background: #FFFFFF;
-    border:0;
+    border: 0;
     padding: 8px 2px;
 }
 
-.burger__item{
+.burger__item {
     display: block;
     width: 30px;
     height: 3px;
@@ -186,24 +199,25 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
 }
 
-.burger__item:before,.burger__item:after{
+.burger__item:before, .burger__item:after {
     content: "";
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     background-color: #000000;
     left: 0;
     z-index: 1;
 }
 
-.burger__item:before{
+.burger__item:before {
     top: -6px;
 }
 
-.burger__item:after{
+.burger__item:after {
     bottom: -6px;
 }
-.test{
+
+.test {
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -211,48 +225,60 @@ h1,h2,h3,h4,h5,h6{
     background-color: #c79f9f;
 }
 
+.test__title{
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
 
-
-
-
-
+.test__item{
+    margin-right: 15px;
+}
 
 /*Media*/
 
 @media (max-width: 770px) {
-    .header__link{
+    .header__link {
         font-size: 12px;
     }
-    .intro{
+
+    .intro {
         height: auto;
         padding: 35px 0;
     }
-    .intro__title{
+
+    .intro__title {
         font-size: 20px;
     }
-    .nav{
+
+    .nav {
         display: none;
         width: 100%;
         background-color: #fff;
         position: absolute;
         right: 0;
-        top: 8%;
+        top: 15%;
         flex-direction: column;
-        text-align: right;
-     }
-    .nav.show{
+        text-align:left;
+    }
+
+    .nav.show {
         display: flex;
     }
-    .header__link{
+
+    .header__link {
         padding: 7px 15px;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
+
     .books__item {
         width: 50%;
     }
-    }
+}
 
 
 
