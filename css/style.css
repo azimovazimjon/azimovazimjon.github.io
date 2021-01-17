@@ -112,31 +112,60 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
-.lesson__table {
-    width: 70%;
-    max-width: 1000px;
+
+
+
+/*Table====
+========================*/
+.mtb-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .table {
     width: 100%;
-    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-collapse: collapse;
 }
 
-.table td {
-    padding: 2px 3px;
+.table th, .table td {
     text-align: center;
-    border: 1px solid #454141;
+    padding: 10px;
 }
 
-.table td:hover {
-    background-color: #e78d8d;
+.table th {
+    background-color: #507afc;
+    color: #FFFFFF;
 }
+
+.table th:nth-child(odd){
+    background-color: #2196f3;
+}
+
+.table tr:nth-child(even){
+    background-color: #e7e5e5;
+}
+.table tr{
+    transition: all .3s;
+}
+.table tr:hover{
+    background-color: #cccccc;
+}
+.table td:not(:last-child){
+    border-right: 1px solid #cccccc;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+
 
 .title__table {
     text-align: center;
     text-transform: uppercase;
 }
+
+
 
 /*Books*/
 
@@ -225,14 +254,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #c79f9f;
 }
 
-.test__title{
+.test__title {
     text-transform: uppercase;
     font-size: 16px;
     text-decoration: underline;
     margin-bottom: 10px;
 }
 
-.test__item{
+.test__item {
     margin-right: 15px;
 }
 
@@ -260,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
         right: 0;
         top: 15%;
         flex-direction: column;
-        text-align:left;
+        text-align: left;
     }
 
     .nav.show {
@@ -278,6 +307,8 @@ h1, h2, h3, h4, h5, h6 {
     .books__item {
         width: 50%;
     }
+
+
 }
 
 
